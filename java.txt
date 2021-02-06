@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class MyProgramReal {
+	
+	public static void main(String[] args) { //method
+		System.out.println("What is your name? ");
+	
+		//type identifier = new type();
+		Scanner scanner = new Scanner(System.in);
+		String name = scanner.nextLine();
+		
+		System.out.println("Hello, " + name + ".");
+	}
+}
+
+//comment
+//class - Contains everything - has methods
+//methods - do something
+//arguments - What you pass to a method (part of the calling)
+//parameter - Variables to store arguments (part of the definition)
+//statements - telling the computer to do something
+//properties - store something
+
+//access modifier - who can use?
+//static - No instance of class is needed
+//object - instance of class
+
+//variable - stores some value
+//expression - evaluates to a value
+//operator - work on operands to produce a value
+//operand - the thing(s) the operator works on
