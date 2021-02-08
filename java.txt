@@ -1,19 +1,45 @@
-import java.util.Scanner;
+/*
+ This is a program that takes a string as an input and outputs it in a greeting statement. 
+ It uses java.util.Scanner in order to do so, which is a class used to obtain user input.
+ */
+
+import java.util.Scanner; //import the scanner class
 
 public class MyProgramReal {
+	
+	/*
+	 Defines a method that can be used by other objects, can be called without creating an object of
+	 the class, and has no return value. "main" is the main java method. "String[] args" stores a string input
+	 into an string array to be used later in the program.
+	 
+	 The next line is used to print a question to the user. println() is like print(), except it also 
+	 adds a new line to the output.
+	 */
 	
 	public static void main(String[] args) { //method
 		System.out.println("What is your name? ");
 	
-		//type identifier = new type();
-		Scanner scanner = new Scanner(System.in);
-		String name = scanner.nextLine();
+		/*
+		 The first line creates a Scanner object called scanner. System.in is used to read keyboard input.
+		 The second line creates a string out of the input read from the previous line, and stores it
+		 in the variable "name".
+		 Lastly, a greeting is printed by concatenating name with "Hello, " and "." using println().
+		 */
 		
-		System.out.println("Hello, " + name + ".");
+		//type identifier = new type();
+		Scanner scanner = new Scanner(System.in); //creates scanner object
+		String name = scanner.nextLine(); //reads user input using created scanner object
+		
+		System.out.println("Hello, " + name + "."); //prints user input in greeting
 	}
 }
 
+
+
+//Definitions
+
 //comment
+
 //class - Contains everything - has methods
 //methods - do something
 //arguments - What you pass to a method (part of the calling)
