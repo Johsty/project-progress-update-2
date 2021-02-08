@@ -1,0 +1,37 @@
+/*
+This program was made so that I could learn how to use comparison and logical operators.
+*/
+
+import java.util.Scanner;
+
+public class Main {
+  public static void main(String[] args) {
+    System.out.println("How old are you?");
+
+    Scanner scanner = new Scanner(System.in);
+    int age = Integer.parseInt(scanner.nextLine());
+
+    System.out.println("Cats or dogs?");
+    String animal = scanner.nextLine();
+
+    if (age > 12 && animal.equals("dogs")) //&& means both must be true
+    {
+      System.out.println("Welcome!");
+    }
+  }
+}
+
+/*
+Comparison Operators:
+== equality
+!= inequality
+< less than
+> greater than
+<= less than or equal to
+>= greater than or eqaul to
+
+Logical Operators:
+&& and (both must be true)
+|| or (either or both can be true)
+! not (inverse the boolean)
+*/

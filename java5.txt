@@ -1,0 +1,30 @@
+/*
+This program was made so that I could learn how to use if, else if, and else.
+*/
+
+import java.util.Scanner;
+
+class Main {
+  public static void main(String[] args) {
+    String phrase = "Johsty";
+    String phrasetwo = "Bach";
+    System.out.println("Guess the phrase: ");
+
+    Scanner scanner = new Scanner(System.in);
+    String guess = scanner.nextLine();
+
+    System.out.println(phrase.equals(guess)); //case sensitive
+
+    if (phrase.toLowerCase().equals(guess.toLowerCase())) {
+        System.out.println("Your guess was correct!"); //works regardless of case
+        return; //ends the program
+    } 
+    else if (phrasetwo.toLowerCase().equals(guess.toLowerCase())) {
+        System.out.println("You're close!");
+        //does not end the program because no return;
+    }
+    else {
+        System.out.println("Your guess was incorrect.");
+    }   
+  }
+}

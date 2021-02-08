@@ -1,0 +1,31 @@
+/*
+This program was made with the purpose of helping me learn about string interning and how it can lead to misleading results when working with strings.
+*/
+
+import java.util.Scanner;
+
+public class Main {
+  public static void main(String[] args) {
+    String phrase = "Johsty";
+    System.out.println("Guess the phrase: ");
+
+    Scanner scanner = new Scanner(System.in);
+    String guess = scanner.nextLine();
+
+    System.out.println(phrase.equals(guess)); //works (if guessed correctly) because the value of guess is equal to the value of phrase
+
+    System.out.println(phrase == guess); //does not work because they are not stored in the same place in memory
+
+    String a = "hi";
+    String b = "hi";
+    System.out.println(a == b); //works because of string interning, both variables are stored in the same place because they have the same contents.
+
+    String c = new String("hi");
+    String d = new String("hi");
+    System.out.println(c == d); //does not work because it compares string objects instead of string literals. string interning does not occur here as both strings are stored seperately.
+  }
+}
+
+//primitives - this works (directly stores value)
+//objects - this does not work (does not directly store value, object)
+//values of objects is a reference to the object

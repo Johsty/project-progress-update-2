@@ -1,0 +1,47 @@
+/*
+This program was created in order to learn about how numerical data works in Java. There are also some methods involving numbers present as well. 
+*/
+
+public class Main {
+  public static void main(String[] args) {
+    int x = 5 / 2; //int = integer data type
+    System.out.println(x);
+    x++; //changes x by increasing value by 1
+    System.out.println(x);
+    x--; //changes x by decreasing value by 1
+    System.out.println(x);
+    int y = 5;
+    System.out.println(Integer.max(x, y)); //returns the larger value
+    System.out.println(Integer.compare(x, y)); //see bottom for explanation
+
+    String stringint = "1000"
+    System.out.println(Integer.valueOf(stringint)); //returns an Integer object
+    System.out.println(Integer.parseInt(stringint)); //returns an int data type
+    //int is a primitive data type while Integer is a class 
+  }
+}
+
+/*
++ addition
+- subtraction
+/ division
+* multiplication
+% modulus
+*/
+
+//precedence = order evaluated
+//(5+3) / 2 * 3
+//PEMDAS
+
+//operations do not change the value of the variable unless the new value is reassigned seperately
+//adding a = after the operator (such as +=) will assign the new value to the variable
+
+//Infinity (output) = Infinity (concept)
+//NaN = Not a Number (such as square root of -1)
+
+/*
+Compare: compares two values to see which is larger, or if they are both equal
+-1: x < y
+0: x == y
+1: x > y
+*/

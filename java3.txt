@@ -1,0 +1,33 @@
+/*
+This program was created in order to learn about how strings work in Java and how to work with them.
+*/
+
+public class Main {
+  public static void main(String[] args) {
+    String x = "hello"; //object (instance of a class) String is NOT primitive
+    System.out.println(x.charAt(0)); //takes int and returns character at string index
+    String y = "\nnew line"; //use \n for line breaks, more special chars below
+    System.out.println(y);
+    System.out.println(x + " hi"); //concatenation, does not change original variable
+    x += ". "; //concatenation, changes original variable
+    System.out.println(x);
+    String name = "Johsty";
+    System.out.println(String.format("Hello, %s.", name)); //format inserts what comes after the comma for what is at the %. the letter after depends on the data type.
+    System.out.println(name.length()); //returns int of number of characters in string
+    System.out.println(name.charAt(name.length()-1)); //can return a specific character in a string by changing the subtraction value (corresponds with index)
+    String multiChar = "a b c d e";
+    System.out.println(multiChar.contains("c")); //returns true or false based on if the word is present in the string
+  }
+}
+
+/*
+Special Characters for Strings:
+\' = single quote
+\" = double quote
+\\ = backslash
+\t = tab
+\b = backspace
+\r = carriage return (replaces what is before \r with what comes after, the rest remains unchanged)
+\f = formfeed (new page, almost never used)
+\n = newline (line break)
+*/
