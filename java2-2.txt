@@ -1,0 +1,24 @@
+/*
+This program was created in order to learn about how the ternary conditional operator works.
+*/
+
+class Main {
+
+  public static void main(String[] args) {
+    String name = "Johsty";
+
+    //boolean welcome = name.equals("Johsty") ? true : false;
+
+    boolean welcome;
+
+    if(name.equals("Johsty"))
+    {
+      welcome = true;
+      System.out.println("True");
+    } else
+    {
+      welcome = false;
+      System.out.println("False");
+    }
+  }
+}

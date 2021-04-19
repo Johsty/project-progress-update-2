@@ -1,0 +1,28 @@
+/*
+This program was created in order to learn the basics of while loops in java.
+*/
+
+import java.util.Scanner;
+
+class Main {
+  public static void main(String[] args) {
+    /*icu
+    *
+    *initialization
+    *condition
+    *update
+    *
+    */
+
+    System.out.println("Guess the password: ");
+    String password = "let me in";
+    Scanner scanner = new Scanner(System.in);
+    String guess = scanner.nextLine();
+
+    while(!guess.equals(password))
+    {
+      System.out.println("Guess the password: ");
+      guess = scanner.nextLine();
+    }
+  }
+}

@@ -1,0 +1,17 @@
+/*
+This program was created in order to learn how to format an if statement in a single line.
+*/
+
+class Main {
+
+  public static void main(String[] args) {
+    String name = "Johstyyy";
+
+    boolean welcome = false;
+
+    if(name.toLowerCase().equals("johsty")) welcome = true;
+      System.out.println("Welcome, Johsty.");
+    
+    System.out.println(welcome);
+  }
+}
